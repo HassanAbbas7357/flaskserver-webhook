@@ -16,7 +16,7 @@ client = Client(config.API_KEY, config.API_SECRET)
 
 
 def order(side, quantity, symbol, order_type=ORDER_TYPE_MARKET):
-    client = Client(config.API_KEY, config.API_SECRET, tld='us')
+  
     try:
         print(f"sending order {order_type} - {side} {quantity} {symbol}")
         order = client.create_order(
