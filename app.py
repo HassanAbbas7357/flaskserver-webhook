@@ -12,6 +12,9 @@ def index():
     return "<h1>Welcome to BOT</h1>"
 
 
+client = Client(config.API_KEY, config.API_SECRET, tld='us')
+
+
 def order(side, quantity, symbol, order_type=ORDER_TYPE_MARKET):
     client = Client(config.API_KEY, config.API_SECRET, tld='us')
     try:
