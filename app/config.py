@@ -1,0 +1,2 @@
+API_KEY = 'v7itui2bVa9cIhke7vx58RhgdobLW6EmTVq6cGve6C0fAfnia8nok7Fl0GUPWooE'
+API_SECRET = '9hHuLRoFkACDtYnadnptbljHQ70lAeEO6w0acJI61MHIOUnDu1trAf8u3o2gmJgb'
