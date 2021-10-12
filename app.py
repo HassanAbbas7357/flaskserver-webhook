@@ -1,5 +1,5 @@
 import json
-from .config import *
+import config
 from flask import Flask, request
 from binance.client import Client
 from binance.enums import *
@@ -9,11 +9,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return "<h1>Welcome to CodingX</h1>"
+    return "<h1>Welcome to BOT</h1>"
 
 
 def order(side, quantity, symbol, order_type=ORDER_TYPE_MARKET):
-    client = Client(API_KEY, API_SECRET, tld='us')
+    client = Client(config.API_KEY, config.API_SECRET, tld='us')
     try:
         print(f"sending order {order_type} - {side} {quantity} {symbol}")
         order = client.create_order(
