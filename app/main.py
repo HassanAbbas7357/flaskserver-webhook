@@ -56,6 +56,11 @@ def order(side, quantity, symbol, order_type=ORDER_TYPE_MARKET):
     return order
 
 
+@app.route('/')
+def index():
+    return "<h1>Welcome to Trading Bot</h1>"
+
+
 @app.route('/webhook/api', methods=['POST'])
 def webhook():
     # print(request.data)
